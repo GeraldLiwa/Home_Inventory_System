@@ -1,0 +1,210 @@
+<!doctype>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Inventory Management</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head> 
+    
+    <script>
+       
+      </script>
+
+
+    <body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.php" id="showLoginForm" >HOME</a></li>
+                <li><a href="categories.php">CATEGORIES</a></li>
+                <li><a href="report.php">REPORT</a></li>
+                <li><a href="additem.html">ADD ITEM</a></li>
+                <li><a href="dashboard.php">DASHBOARD</a></li>
+                <li><a href="index.php">ABOUT US</a></li>
+                
+            </ul>
+            <div class="profile">
+                <img src="images/pro icon.png" alt="Profile Image">
+            </div>
+        </nav>
+    </header>
+
+    <div class="mmain"  style="background-image: url('w1.jpg'); ">
+        <div class="clicks">
+            <div class="recent-label" >
+                
+            </div>
+            <a href="" class="uk" id="bt1">
+                <div class="recent-btn">
+                    <p>add here!!! </p>
+                </div>
+            </a>
+           
+        </div >
+       
+
+        
+
+        
+        <div id="recent-content " style="border: solid rgb(38, 0, 255); margin-left: 60px; border-radius: 7px; background-color: #909497;">
+        <div class="fmmm">
+            <div style="text-align: center;">
+                <p style="color: rgb(91, 192, 240); font-size: 22px; color: white; font-style: italic;">Add your Items here</p>
+            </div>
+            <div>
+                <form action="add.php" method="POST" enctype="multipart/form-data">
+                    <div class="mainform">
+                        <div class="part1">
+                    <span>NAME OF ITEM</span>
+                    <input type="text" required name="name" class="inputt"> <br>
+
+                    <span>CATEGORIES</span>
+                    <select name="category" id="" class="inputt">
+                        <option value="">choose</option>
+                        <option value="Furniture">Furniture</option>
+                        <option value="appliances">Appliances</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="cooking utensils">Cooking utensils</option>
+                        <option value="tools & equipment">Tools & Equipment</option>
+                    </select> <br><br>
+
+                    <span>DATE OF PURCHASE</span>
+                    <input type="date" name="dop" id="" class="inputt"><br><br>
+
+                   <span>PICTURE</span>
+                    <input type="file" name="picture" class="inputt"><br><br>
+
+                    <span>NUMBER OF ITEMS</span>
+                    <input type="number" name="not" id="" class="inputt"> <br><br>
+
+                    <textarea name="maintance" id="" placeholder="Enter your maintance history" cols="46" rows="3" style="border-radius: 7px;border: solid;"></textarea>
+
+                        </div>
+                        <div class="part2">
+                            <span>SUPLLIER</span>
+                            <input type="text" name="supplier" id="" class="inputt"><br>
+
+                            <span>AMOUNT BOUGHT(MWK)</span>
+                            <input type="number" name="amount" id="" class="inputt"><br><br>
+
+                            <span>DATE OF EXPIRY</span>
+                            <input type="date" name="warrant" id="" class="inputt"><br><br>
+
+                            <span>ITEM STATUS</span>
+                            <select name="status" id="" class="inputt">
+                                <option value="">choose</option>
+                                <option value="not in use">Not in Use</option>
+                                <option value="in use">Inuse</option>
+                                
+                            </select><br><br>
+
+                            <div style="display: none;">
+                                <textarea name="" id="" ></textarea>
+                            </div><br>
+
+                            <textarea name="comment" id="" placeholder="write your comments here about your item" cols="46" rows="3" style="border-radius: 7px;border: solid;"></textarea>
+                            <div style="margin-top: 30px;">
+                                <a href="" style="margin-left: 20px;">
+                                    <input type="submit" name="" id="" class="but" value="add item">
+                                </a> &nbsp;
+                                <a href="" style="margin-left: 60px;">
+                                    <input type="reset" name="" id="" value="RESET" class="but">
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+      
+            
+        </div>
+        
+    
+
+    </div>
+    <div class="enter" id="loginForm" style="display: none;" id="signin-form" name="maya">
+            <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                <div id="label">
+                    <img src="pro icon.png" alt="Icon">
+                </div>
+                <div>
+                    <p style="font-weight: bold;">User Login</p>
+                </div>
+                <div style="text-align: left;padding-left: 210px;">
+                    <a href="index.php">
+                        <img src="images/caccc.png" alt="" style="height: 60px; width: 50px;">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h2>WELCOME</h2>
+            </div>
+            <form>
+                <label for="username">Username/Email</label>
+                <input type="text" id="username" placeholder="Enter your username or email" required>
+    
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+    
+                <input type="submit" value="LOGIN" id="login">
+            </form>
+            <div class="testing">
+                <a href="#maya">Forgot Password?</a>
+                <a href="#">Sign up?</a>
+            </div>
+        </div>
+
+        
+
+
+
+    <!-- footer section start -->
+ <div class="footer_section">
+    <div class="container">
+       <div class="footer_section_2">
+          <div class="row">
+             <div class="ttlee">
+                <h2 class="useful_text">Quick Links</h2>
+                <div class="footer_menu">
+                   <ul>
+                      <li class="active"><a href="index.php"></a></li>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Report</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      
+                   </ul>
+                </div>
+             </div>
+             <div class="ttle">
+                <h2 class="useful_text">Blog</h2>
+                <p class="footer_text">"Stay updated with the latest trends and tips on managing your home inventory efficiently. Our blog covers everything from organizational hacks to important updates in the world of home security."</p>
+                <div class="social_icon">
+                   <ul>
+                      <li><a href="https://www.facebook.com/login"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                   </ul>
+                </div>
+             </div>
+             <div class="ttle">
+                <h2 class="useful_text">Contact us</h2>
+                <input type="email" class="Enter_text" placeholder="Enter Your Email" name="Enter Your Email" required><br><br>
+                <input type="email" class="Enter_text" placeholder="Enter your question here" name="Enter Your Email" required>
+                <div class="subscribe_bt"><a href="#">Submit</a></div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ <!-- footer section end -->
+  
+    </body>  
+</html>
